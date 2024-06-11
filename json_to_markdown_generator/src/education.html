@@ -1,0 +1,73 @@
+# 🎓 Education
+
+{{#educationList}}
+
+## 🎓 __DEGREE__: {{level}}
+
+- __Institute__: {{institute}}
+- __Date__: {{date}}
+- __Department__: {{department}}
+- __Grade Point Average (GPA)__: {{gradePointAverage}}
+
+{{#thesisDetail}}
+!!! example "Thesis"
+
+    {{thesisDetail}}
+{{/thesisDetail}}
+
+{{#allTechnologyStack}}
+??? example "Technologies and Tools of this Thesis"
+
+    {{#frontEndListExist}}
+    __Front-end__
+    {{/frontEndListExist}}
+    
+    {{#frontEndList}}
+    - {{.}}
+    {{/frontEndList}}
+    {{#frontEndListExist}}
+    
+    {{/frontEndListExist}}
+    {{#backEndListExist}}
+    
+    __Back-end__
+    
+    {{/backEndListExist}}
+    {{#backEndList}}
+    - {{.}}
+    {{/backEndList}}
+    {{#backEndListExist}}
+    
+    {{/backEndListExist}}
+    {{#devopsListExist}}
+
+    __DevOps__
+
+    {{/devopsListExist}}
+    {{#devopsList}}
+    - {{.}}
+    {{/devopsList}}
+    {{#devopsListExist}}
+    
+    {{/devopsListExist}}
+
+    {{#toolListExist}}
+    
+    __Tools__
+    
+    {{/toolListExist}}
+    {{#toolList}}
+    - {{.}}
+    {{/toolList}}
+
+{{/allTechnologyStack}}
+
+<br>
+
+{{/educationList}}
+
+## ⭐ Member of Department Advisory Board
+
+- __Institute__: Halic University
+- __Date__: 2020 - Present
+- __Department__: Software Engineering
